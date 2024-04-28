@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ------------------------------------------Image in HTML ---------------------------------------- -->
     <img src="/05_image_list_tables_in_html/image_01.png" alt="its an image of a boy who are looking for something" width="230" height="200px">
     <!--যদি ওয়েবসাইটে কোন image show করাতে হয় তাহলে আমরা সাধারনত img tag use করি 
     img tag এর ভিতরে src নামে একটা attribute আছে । এই src attribute এর ভিতরে আমরা value হিসেবে assign করতে পারি img এর location টা । pc এর যেখানে আমরা img টা store করে রেখেছি তার location টা এখানে আমরা দিয়ে দিব । আর এখানে alt নামে আর একটা attribute আছে যেখানে আমরা message দিব image related . alt attribute এর কাজ হলো যদি কোন কারনে image টা load নিতে না পারে তাহলে সেখানে img এর স্থানে alt এ দেয়া message টা show করবে । 
     img এর আরো ২ টা attribute আছে এগুলো হলো height এবং width যেগুলোতে আমরা value set করতে পারি যেগুলো পরবর্তীতে ইমেজ কে বড় এবং ছোট করার কাজে আসে । value গুলো সাধারনত pixel অনুসারে কাজ করে। 
     -->
-    <!-- table tag in html -->
+    <!---------------------------------------- table tag in html --------------------------------------->
     <br>
     <!-- কোন content এর পর যদি line break দিতে হয় সেক্ষেত্রে আমরা <br> tag use করি  -->
     <table border="1">
@@ -57,5 +58,38 @@
     rowspan মানে হচ্ছে row এর জায়গা বাড়িয়ে নেয়া । আর অন্যদিকে 
     columnspan মানে হচ্ছে column এর জায়গা বাড়িয়ে নেয়া ।     
     -->
+
+
+    <!-- ---------------------------------------lists in HTML ----------------------------------- -->
+    <!-- There are 3 types of lists in HTML
+    1. Unordered list
+    2. Ordered list
+    3. Definition list
+    -->
+    <!-- 1. Unordered list -->
+
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Sihab</li>
+        <li>Sifat</li>
+        <li>Suha</li>
+    </ul>
+    <!-- 2. Ordered list -->
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Sihab</li>
+        <li>Sifat</li>
+        <li>Suha</li>
+    </ol>
+    <!-- 3. Definition list -->
+    <h2>HTML Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language: The standard language for creating web pages</dd>
+        <dt>CSS</dt>
+        <dd>Casecading Style Sheets: A stylesheets language used for describing the look and formatting of a document written in HTML.</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming Language commonly used in web development to add interactive features.</dd>
+    </dl>
 </body>
 </html>
