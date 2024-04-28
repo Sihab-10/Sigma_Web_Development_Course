@@ -19,14 +19,18 @@
         <caption>Employee details</caption>
         <thead>
             <!-- header content -->
-            header
             <!-- এখানে table এর header content লিখতে পারি  -->
-        </thead>
+            <!-- এখানে table এর ভিতর কি type এর data নিব তার নাম টা লিখবো  -->
         <tr>
             <th>Name</th>
             <th>Designation</th>
             <th>Fav Language</th>
         </tr>
+    </thead>
+    <tbody>   
+        <!-- body content -->
+        <!-- এখানে <td> tag এর ভিতরে <th> tag এর ভিতরে যেই type এর data নিব বলে ঠিক করেছিলাম তার 
+            value গুলো assign করবো  -->
         <tr>
             <td>Sihab</td>
             <td rowspan="2">Programmer</td>
@@ -40,13 +44,16 @@
             <td colspan="2">Sifat</td>
             <td>Graphics Designer</td>
         </tr>
+    </tbody>
         <tfoot>
             <!-- footer content -->
-            footer
+            <tr>
+                <td colspan="3" style="text-align: center;">copyright © 2024</td>
+            </tr>
             <!-- এখানে table এর footer এর content লিখবো  -->
         </tfoot>
     </table>
-    <!-- table create করার জন্য আমরা <table> tag দিয়ে শুরু করবো তারপর <tr> tag এর ভিতরে প্রথমে table head দিব <th> এরমধ্যেই আমরা কি type এর data নিতে চাচ্ছি তার নাম টা লিখবো এরপর আরেকটা <tr> tag এর ভিতরে table data নিব <td> tag এর ভিতরে 
+    <!-- table create করার জন্য আমরা <table> tag দিয়ে শুরু করবো তারপর <thead> tag এর মধ্যেই <tr> tag এর ভিতরে প্রথমে  <th> নিব যার ভিতরে এরমধ্যেই আমরা কি type এর data নিতে চাচ্ছি তার নাম টা লিখবো এরপর <tbody> tag এ ভিতরে আরেকটা <tr> tag এর ভিতরে table data নিব অর্থাৎ এখানে <td> tag এর ভিতরে <th> tag এর ভিতরে যেই type এর data নিব বলে ঠিক করেছিলাম তার value গুলো assign করবো । আর সবশেষে <tfoot> এর মধ্যে আমরা <tr> tag এর ভিতরে <td> tag নিয়ে আমরা table এর footer content add করে দিব । 
     rowspan মানে হচ্ছে row এর জায়গা বাড়িয়ে নেয়া । আর অন্যদিকে 
     columnspan মানে হচ্ছে column এর জায়গা বাড়িয়ে নেয়া ।     
     -->
