@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Block Element</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- What are Inline Elements? -->
+    <!-- Inline elements do not start on a new line and only take up as much width as necessary. -->
+
+
+    <!-- Whar are block element? -->
+    <!-- Block-level elements are those that start on a new line and take up the entire width of their container by default. They essentially claim all the horizontal space for temselves, Pushing any content that comes after them to a new line.  -->
+
+    <p>I am a pera</p>
+    <!-- অর্থাৎ p হচ্ছে block level element কেন কারন হচ্ছে <p> paragraph tag viewport এর পুরো width এর জায়গা নিয়ে নেয় ।  -->
+    <a href="https://google.com">Google</a>
+    <!-- অন্য দিকে anchor tag <a> tag হচ্ছে একটা inline element কেন কারন হচ্ছে <a> tag এর যতটুকু জায়গা প্রয়োজন সে শুধু তত টুকু জায়গা নিবে।  -->
+
+    <div>I am a block element</div>
+    <!-- <div> tag is an block level element -->
+    <span>Span is an inline element</span>
+    <a href="">Yes Span is inline</a>
+    <!--
+        Block Elements 
+        Most Commonly Used First
+
+        <div>: A generic container for flow content. 
+        
+        <p>: Prargraph.
+
+        <h1>, <h2>, <h3>, <h4>, <h5>, <h6>:
+        Heading.
+
+        <ul>: Unordered List. 
+
+        <ol>: List item
+
+        <li>: List item
+
+        <form>: A section containing form controls. 
+
+        <table>: Table
+
+        <section>:
+        A standalone section of a document.
+
+        <header>:
+        A container for introductory content or a set of navigational link
+
+        <footer>:
+        Footer of a section or page
+
+        <nav>:
+        A section of a page that contains navigation links. 
+
+        <article>: A self-contained composition in a document.
+
+        <aside>: A section of a page that contains navigation links.
+
+        <main>:The main content of a document
+
+        <fieldset>: A set of form controls grouped under a common name 
+
+        <blockquote>: A block of text that is a quotation form another source. 
+
+        <pre>: Preformatted text. 
+        
+        <canvas>: A container used to draw graphics via JavaScript
+
+        <dl>: Description list
+
+        <dt>: Term in a descripton list 
+
+        <dd>: Description in a description list
+
+        <figure>: Any content that is referenced from the main content. 
+
+        <figcaption>:A caption for a <figure> element. 
+
+        <address>: Contact information for the author or owner of the document. 
+
+        <hr>: A thematic break or a horizontal rule. 
+
+        <tfoot>: Footer of a table 
+
+        
+        ================================
+
+        Inline Elements (Most Commonly Used first)
+
+        <a>: Anchor or hyperlink. 
+
+        <img>: Image. 
+
+        <span>: Generic inline container
+
+        <input>: Input field
+
+        <label>: label for a form element.
+
+        <strong>: Strong emphasis. 
+
+        <em>: Emphasized text. 
+
+        <br>: Line break. 
+
+        <code>: Code snippet. 
+
+        <b>: Bold text. 
+
+        <i>: Italic text. 
+
+        <u>: Underlined text. 
+
+        <small>: Smaller text. 
+
+        <sub>: Subscript
+
+        <sup>: Superscript
+
+        <mark>: Marked or highlighted text. 
+
+        <q>: short inline quotation. 
+
+        <cite>: citation. 
+
+        <kbd>: Keyboard input. 
+
+        <samp>: Sample output. 
+
+        <var>: Variable in a mathematical expression or programming context. 
+
+        <time>: Time. 
+
+        <abbr>: Abbreviation 
+
+        <data>: Machine-readable translation of content. 
+
+        <acronym>: Acronym (Not supported in HTML5). 
+    -->
+
+    <!-- Quick Quiz
+    Without using br tag, write a vertically aligned form asking for name, city and pincode of a user. 
+    -->
+    <form action="">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your user name">
+        </div>
+        <div>
+            <label for="city">Select your city:</label>
+            <select name="city" id="city">
+                <option value="Dinajpur">Dinjpur</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Rangpur">Rangpur</option>
+            </select>
+        </div>
+        <div>
+            <label for="pincode">Enter your Pincode:</label>
+            <input type="number" name="pincode" id="pincode"
+            placeholder="Enter your pincode">
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
