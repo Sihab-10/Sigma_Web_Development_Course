@@ -9,7 +9,8 @@
 }
 
 #firstdiv{
-    
+   background-color: black;
+   color: white;
 
 }
 /* website এর link এ আমরা id use করতে পারি just go to the end of the link and paste #idname */
