@@ -1,0 +1,15 @@
+/* to style a class you must add . before a class name */
+/* to style an ID you must add # before an ID name */
+.red{
+    background-color: red;
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
+
+#firstdiv{
+    
+
+}
+/* website এর link এ আমরা id use করতে পারি just go to the end of the link and paste #idname */
