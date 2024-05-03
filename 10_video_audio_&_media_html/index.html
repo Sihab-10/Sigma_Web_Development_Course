@@ -18,8 +18,63 @@
         poster - Specifies an image to be displayed before the video starts playing.
         width & height - Specifies the dimensions of the video 
      -->
-     <h2>Thunder Cats Theme Song</h2>
-     <audio src="Thundercats_audio.mp3" controls></audio>
+     <br>
+     <br>
+     <br>
+     <br>
+     <div>
+         <a href="http://logowiki.net/logo/thundercats-1-2" target="_blank"><img src="//logowiki.net/uploads/logo/t/thundercats-1-2.svg" width="300" /></a>
+         <br>
+         <br>
+         <audio src="Thundercats_audio.mp3" controls autoplay muted preload="metadata"></audio>
+        </div>
+     <!-- 
+        src , controls , autoplay , loop and muted attributes are applicable for <audio> tag
+        Preload: Specifies if and how the audio should be loaded when the page loads
+        ('auto', 'metadata', 'none').
+        1. None : This is the default value . it indicated that the browser should not preload the audio file at all . The audio file will only start downloading when the user initiates playback.
+        2. metadata : This value tells the  browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data. 
+        3. auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it. 
+      -->
+      <h2>Its an svg image</h2>
+      <svg height="100" width="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    </svg>
+    <!--  -->
+    <img src="image.svg" alt="thundercats_logo">
+    <!-- svg image implement করার জন্য অবশ্যই এই declaration দিতে হবে 
+        xmlns="http://www.w3.org/2000/svg" এটি add করতে হবে না হলে browser এ show করবে না  -->
+    <!-- SVG - Scalabale Vector Graphics . it enables developers to create high-qulity graphics that look crisp at any size or resolution. SVGs are not pixel based thats why it composed of vectors - mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality -->
+    <!-- Why use SVG -->
+    <!-- Scalability
+    SVG images can be scaled idefinitely without losing quality, which is ideal for responsive web design
+
+    File Size
+    SVG files are often smaller than their raster counterparts, especially for simple shaps and icons.
+
+    Flexibility 
+    SVGs can be styled, animated and manipulated using CSS and javaScript
+    -->
+    <!-- How to Embed SVG in HTML
+    1. inline SVG: Directly writing the SVG xml code within HTML.
+    2. Using an <img> tag : point the src attribute to an SVG file.
+    3. Using CSS: Setting SVG as a background image in a CSS file. 
+    
+    -->
+    <!-- iFrames in HTML -->
+    <!-- অন্য কারো website embed করতে পারবো আমার website এ <iframe> tag use করে  -->
+        <!-- basic syntax for iframe is  -->
+        <!-- <iframe src="url" width="width" height="height"> -->
+            <div>
+                <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" frameborder="1" width="1800" height="900"></iframe>
+
+            </div>
+            <!-- আমরা youtube এর কোন video কে embed করতে পারবো -->
+            <div>
+                <h3>Batman The Animated Series Theme song</h3>
+                <iframe width="1920" height="1080" src="https://www.youtube.com/embed/rrmUk2YUm14?si=0Nkgt_W5KmZCdT0D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
      <!-- Quick Quiz -->
+     <!-- create  a website which shows videos of different category and audios of different categories . You can use youtube videos in an iframe using youtubes embedding features.-->
 </body>
 </html>
