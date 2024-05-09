@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: red;
+            color: wheat;
+        }
+
+        /* class selector */
+        .blue {
+            background-color: rgb(27, 12, 241);
+            color: wheat;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+        /* child selector */
+        /* কোন একটা element এর direct child হলে সেটির ক্ষেত্রে style হবে ।  */
+        main > p{
+            color: rgb(240, 241, 215);
+            background-color: rgb(114, 40, 40);
+        }
+        /* descendent selector */
+        /* কোন একটা element এর child হলেই সেটাতে style হয়ে যাবে এবং এমন নয় যে direct child হতে হবে।  */
+        div p{
+            color: rgb(238, 232, 218);
+            background-color: darkblue;
+        }
+        /* Universal Selector */
+        /* আমি চাচ্ছি সব element এর মধ্যেই style প্রয়োগ করতে */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* pseudo selector */
+        /* যেই link টা visited সেই link টার style change হবে  */
+        a:visited{
+            color: aliceblue;
+            background-color: black;
+        }
+        /* link টা যেই color এ দেখাতে চাচ্ছি সেই color এ change হয়ে যাবে যদি আমরা link pseudo class নেই */
+        a:link{
+            color: rgb(192, 99, 22);
+            background-color: rgb(190, 134, 134);
+        }
+        /* link এ click করলে click করা অবস্থায় যেই color টা চাচ্ছি সেই color টা আনতে হলে আমরা active pseudo class add করবো*/
+        a:active{
+            background-color: red;
+        }
+        /* link এ hover করলে আমাদের style change হয়ে যাবে hover pseudo selector use করলে  */
+        a:hover{
+            background-color: yellow;
+        }
+        /* link এ first-child pseudo selector use করলে element টা html document এর যেখানেই থাকুক না কেন যদি সেটা যেকোনো element এর প্রথম child হয় তাহলে সেটার style change হয়ে যাবে।*/
+        p:first-child{
+            background-color: rgb(194, 108, 228);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- What are CSS Selectors? -->
+    <!-- CSS Selectors allow us to choose specific elements and apply styles to them -->
+    <!-- for example : element with ID and element with Class -->
+    <div class="blue">
+        I am a div
+    </div>
+    <main>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur pariatur doloribus minus, officia voluptates necessitatibus minima eius eligendi nemo hic.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur pariatur doloribus minus, officia voluptates necessitatibus minima eius eligendi nemo hic.</p>
+    </main>
+    <div id="green">
+        I am third div
+    </div>
+    <div>
+        <article>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aperiam itaque libero accusamus deleniti consequatur quasi quo aliquid debitis modi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, aperiam itaque libero accusamus deleniti consequatur quasi quo aliquid debitis modi.</p>
+            </section>
+        </article>
+    </div>
+    <a href="https://www.google.com" target="_blank">go to google</a>
+    <a href="https://www.youtube.com" target="_blank">go to Youtube</a>
+    <div class="selector">
+        <p>I am selector</p>
+        <p>I am selector</p>
+    </div>
+</body>
+
+</html>
