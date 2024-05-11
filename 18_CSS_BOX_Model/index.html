@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: blue;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 5px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 50px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- আমাদের html এর body এর মধ্যে যা কিছু থাকে সবগুলোই একটা content এর under এ আসে । suppose div এর ভিতর যা লিখবো সেটা একটা content . তারপর h1 tag এর মধ্যে কিছু লিখতে সেটা একটা content এর under এ যাবে  -->
+    <!-- Calculating the total dimension of the element  -->
+    <!-- The total width and height of the element is calculated with the formula -->
+    <!-- Total Width = width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin -->
+    <!-- Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin -->
+    <!-- box-sizing property যদি use করি তার সাথে যদি height:200px দিয়ে দেই তাহলে border আর padding কে সাথে নিয়ে সেটি website এ set করবে। -->
+    <!-- margin collapse concept -->
+    <!-- margin collapse এর concept হলো যদি  ২ টা content এর margin একসাথে collapse করে তাহলে যেই content এর margin বড় দেয়া আছে সেটি প্রাধান্য পাবে । অর্থাৎ suppose একটা content এর margin দেয়া আছে 25 px আবার তার সাথেই second আরেকটা margin এর content দেয়া আছে 50 px তাহলে second content এর margin website এ show করবে অর্থাৎ তখন 50 px টা কার্যকর হবে।  -->
+    <div class="box box1">
+        I am a box 1
+    </div>
+    <div class="box box2">
+        I am a box 2
+    </div>
+
+</body>
+</html>
