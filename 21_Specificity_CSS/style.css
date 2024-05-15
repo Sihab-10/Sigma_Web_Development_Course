@@ -1,0 +1,41 @@
+/* The specificity of this element is 1 */
+h1{
+    color: aqua;
+}
+/* The specificity of this element is 10 */
+.yellow{
+    color: yellow;
+}
+/* The specificity of this element is 1 + 10 = 11 */
+h1.cred{
+    color: red;
+}
+/* The specificity of this element is 10 */
+.cpurple{
+    color: purple;
+}
+/* The specificity of this attribute selector is 10 */
+[data-x="a"]{
+    color: blue;
+    background-color: wheat;
+}
+
+/* একই type এর হলে অর্থাৎ শুধু যদি class selector থাকে তাহলে কে জিতবে , যে শেষে থাকবে সে জিতবে  */
+
+/* কিন্তু যখনি একাধিক type থাকবে for example id , class or element selector তখন specificity কাজ করবে  */
+/* the order of specificity is */
+/* Inline Style > ID selector > Class or Attribute Selector > Elemnet Selector > Universal Selector */
+
+/* To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
+Then, add up the values of all the parts in the selector.
+*/
+/* a.harryclass.rohan-class[href]:hover {
+    color: red;
+  } */
+  /* 1 (element selector) + (10+10) (class selector) + 10 (attribute selector) + 10 (pseudo selector) = 41 */
