@@ -1,0 +1,112 @@
+/* to reset html document we use universal selector and declare
+    margin and padding as 0
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid red;
+    width: 80vw;
+    height: 10vh;
+    margin: auto;
+    background-color:aquamarine;
+    box-sizing: border-box;
+}
+/* 
+    যখন আমরা width: 1920px; use করবো তখন কিন্তু যদি 2k resolution বা 4k resolution কেউ এই ওয়েবসাইট কেউ দেখতে যাবো তখন কিন্তু আমাদের content fixed pixel এ দেয়ার কারনে content ফাটে যাবে। 
+
+    তাই আমাদেরকে অন্য কোন units use করতে হবে যে টা আসলে relatively change হয় monitor wise . এক্ষেত্রে আমরা use করতে পারি vw , vh unit
+    
+    vw = viewport width . যদি width: 100vw দেই তাহলে সেটা পুরো monitor এর viewport বা যত টুকু দেখা যাচ্ছে এর সম্পূর্ণ জায়গাটা নিবে। 
+    width: 80vw; করলে viewport এর ৮০% জায়গা নিবে । 
+    same goes for vh = viewport height also. 
+
+    width: 80vw;
+    margin: auto; করলে left-right side থেকে সমান margin নিয়ে নিবে। 
+    কিন্তু এটা শুধু মাত্র block level element এর জন্য প্রযোজ্য। 
+    কোন একটা content কে center এ আনতে হলে এই shortcut টা use হয়। 
+*/
+.container{
+    border: 2px solid red;
+    width: 80vw;
+    /* height: 80vh; */
+    min-height: 80vh;
+    margin: 22px auto;
+    font-size: 16px;
+    background-color:aquamarine;
+    box-sizing: border-box;
+}
+
+.container p{
+    font-size: 2em;
+    width: 50%;
+    border: 2px solid red;
+}
+
+/* তার মানে em unit তার parent এর unit কে inherit করে । অর্থাৎ parent কে দেখে নিজে change হয়। 
+.parent{
+    font-size: 16px; যে টা আসলে by default থাকে 
+}
+.child{
+    font-size: 2em; তাহলে 16px x 2 = 32px হয়ে যাবে । অর্থাৎ যত দিব সেটা parent কে দেখে তত গুন হয়ে যাবে। 
+}
+
+min-height এর মানে হলো minimum যেটা দিচ্ছি অইটা রাখো এবং এর পরে বাড়লে যা দেয়া হইসে তা থেকে বাড়বে 
+same goes for min-width also
+
+% unit সাধারনত তার parent অনুযায়ী change হয়। এখানে width: 50%; দেয়া হইসে তাহলে এর parent হচ্ছে container যার width: 80vw; তাহলে pragraph এর width 80vw এর ৫০% হয়ে আসবে। 
+*/
+
+html{
+    font-size: 12px;
+}
+
+.container p{
+    font-size: 2rem;
+}
+
+/* 
+    তার মানে rem unit তার root element এর unit কে inherit করে। 
+
+    html হচ্ছে html document এর root element 
+    html{
+        font-size: 12px;
+    }
+    .class p{
+        font-size: 2rem; এর মানে 12px x 2 = 24px; । অর্থাৎ যত দিব সেটা root কে দেখে তত গুন হয়ে যাবে।  
+    }
+
+*/
+
+/* 
+    the concept of vamx and vmin
+
+    যখন আমরা vmax বা vmin use করবো তখন কিন্তু device অনুযায়ী 
+    width and height auto detect করে নিবে। 
+
+    for phone 
+    vmax --> height (vh)
+    vmin --> width (vw)
+
+    for desktop computer
+    vmax --> width (vw)
+    vmin --> height (vh)
+
+*/
+
+.mycont{
+    border: 2px solid black;
+    margin: 23px auto;
+    text-align: center;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    width: 80vw;
+    /* width: 100vmin; */
+    /* we are in desktop so 100vmin = 100vh
+        but in phone this will change 
+        100vmin = 100vw
+    */
+}
+
