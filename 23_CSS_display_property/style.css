@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    display: inline-block;
+    border: 2px solid blue;
+    padding: 45px;
+    margin: 20px;
+}
+
+/* display: inline; property তে top এ কোন style প্রয়োগ করা যায় না।  */
+
+.box1{
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* যদি কোন একটা inline-block or block element কে 
+vanish করতে হয় বা নাই করে দিতে চাই জায়গা সহ তাহলে display: none; */
+/* আর যদি জায়গাটা ফাকা রেখে content vanish করতে চাই তাহলে 
+visibility: hidden; করে দিব। 
+*/
+
