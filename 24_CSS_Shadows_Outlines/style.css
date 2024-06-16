@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    border: 2px solid black;
+    padding: 34px;
+    box-shadow: 8px 11px 6px 0px #82967f;
+    text-shadow: 8px 8px 4px #9a86e0;
+}
+.box2{
+    border: 2px solid green;
+    border-radius: 10px;
+    margin-top: 100px;
+    outline: 2px solid black;
+    outline-offset: 20px;
+}
+/*  CSS Shadows  */
+
+/* Box Shadows */
+/* 
+box-shadow is a popular css property that enables designers to add shadow effects around an elements frame. It can be used to give any element, be it a div, image, or button, a 3D feel or to emphasize on hover. 
+*/
+
+/* 
+box-shadow: h-offset v-offset blur spread color inset;
+*/
+
+/* 
+h-offset and v-offset: Determines the shadow's horizontal and vertical position 
+
+blur: The larger the value the blurrier the shadow
+
+spread: Expands or shrinks the shadow size
+
+color: Defines the shadow color
+
+inset: makes the shadow inner
+
+*/
+
+/* 
+Text shadows
+*/
+
+/* 
+text-shadow is utilized to give shadows specially to the text
+*/
+/* 
+text-shadow: h-offset v-offset blur color;
+*/
+
+/* outline */
+
+/* 
+outline : width style color;
+
+outline : 2px solid blue;
+
+*/
+
+/* 
+Difference between outlines and borders
+
+1. Position: Outlines don't take up space; theyr'e drawn around the element, outside of any border. 
+2. offset: Using the outline-offset property, you can set the space between an outline and the edge or border of an element. 
+3. Width: Borders can have varying widths on different sides, outlines have a uniform width. 
+4. Rounded Corners : Borders can have rounded corners using border-radius , while outlines generally cannot. 
+
+*/
