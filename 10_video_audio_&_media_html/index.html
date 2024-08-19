@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Video , Audio & Media in HTML</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h2>Studio Ghibli Theme Song</h2>
-    <video src="video.mp4" controls width="600" loop poster="studio-ghibli-poster.jpg"></video>
+    <video
+      src="video.mp4"
+      controls
+      width="600"
+      loop
+      poster="studio-ghibli-poster.jpg"
+    ></video>
     <!-- আমরা সাধারনত <video> tag এর মধ্যে লিখতে পারি এবং আমারা src attribute এর মধ্যে video এর location set করে দিব আর video এর playbutton, sound , full-screen mode সহ আরো বিভিন্ন option চালু করতে হলে just controls keywork use করবো । আর video টা আমাদের website এর viewport এ কতটুকু জায়গা জুরে থাকবে সেটা declare করার জন্য width attribute এর use করতে পারি  -->
     <!-- 
         src - Specifies the path to the video file
@@ -20,16 +25,25 @@
         poster - Specifies an image to be displayed before the video starts playing.
         width & height - Specifies the dimensions of the video 
      -->
-    <br>
-    <br>
-    <br>
-    <br>
+    <br />
+    <br />
+    <br />
+    <br />
     <div>
-        <a href="http://logowiki.net/logo/thundercats-1-2" target="_blank"><img
-                src="//logowiki.net/uploads/logo/t/thundercats-1-2.svg" width="300" /></a>
-        <br>
-        <br>
-        <audio src="Thundercats_audio.mp3" controls autoplay muted preload="metadata"></audio>
+      <a href="http://logowiki.net/logo/thundercats-1-2" target="_blank"
+        ><img
+          src="//logowiki.net/uploads/logo/t/thundercats-1-2.svg"
+          width="300"
+      /></a>
+      <br />
+      <br />
+      <audio
+        src="Thundercats_audio.mp3"
+        controls
+        autoplay
+        muted
+        preload="metadata"
+      ></audio>
     </div>
     <!-- 
         src , controls , autoplay , loop and muted attributes are applicable for <audio> tag
@@ -41,10 +55,17 @@
       -->
     <h2>Its an svg image</h2>
     <svg height="100" width="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="black"
+        stroke-width="3"
+        fill="red"
+      />
     </svg>
     <!--  -->
-    <img src="image.svg" alt="thundercats_logo">
+    <img src="image.svg" alt="thundercats_logo" />
     <!-- svg image implement করার জন্য অবশ্যই এই declaration দিতে হবে 
         xmlns="http://www.w3.org/2000/svg" এটি add করতে হবে না হলে browser এ show করবে না  -->
     <!-- SVG - Scalabale Vector Graphics . it enables developers to create high-qulity graphics that look crisp at any size or resolution. SVGs are not pixel based thats why it composed of vectors - mathematical formulas that describe shapes, paths, and fills. This means SVGs can be resized without losing quality -->
@@ -69,20 +90,28 @@
     <!-- basic syntax for iframe is  -->
     <!-- <iframe src="url" width="width" height="height"> -->
     <div>
-        <iframe src="https://www.codewithharry.com/tutorial/html-iframes/" frameborder="1" width="1800"
-            height="900"></iframe>
-
+      <iframe
+        src="https://www.codewithharry.com/tutorial/html-iframes/"
+        frameborder="1"
+        width="1800"
+        height="900"
+      ></iframe>
     </div>
     <!-- আমরা youtube এর কোন video কে embed করতে পারবো -->
     <div>
-        <h3>Batman The Animated Series Theme song</h3>
-        <iframe width="1920" height="1080" src="https://www.youtube.com/embed/rrmUk2YUm14?si=0Nkgt_W5KmZCdT0D"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <h3>Batman The Animated Series Theme song</h3>
+      <iframe
+        width="1920"
+        height="1080"
+        src="https://www.youtube.com/embed/rrmUk2YUm14?si=0Nkgt_W5KmZCdT0D"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
     </div>
     <!-- Quick Quiz -->
     <!-- create  a website which shows videos of different category and audios of different categories . You can use youtube videos in an iframe using youtubes embedding features.-->
-</body>
-
+  </body>
 </html>
