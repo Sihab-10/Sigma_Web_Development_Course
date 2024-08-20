@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow Property</title>
+    <style>
+      .box {
+        width: 40vw;
+        height: 10vh;
+        border: 2px solid black;
+        /* if your content overflow from the box then we use overflow.
+        overflow: hidden; meaning vanish the overflow content
+        overflow: scroll; meaning make a scrollbar in the content
+        overflow: auto; meaning if the content need any scrollbar then it take otherwise it goes what it is. */
+        /* overflow: auto; */
+        /* overflow-x: hidden;
+        overflow-y: scroll; */
+        overflow: hidden auto;
+        /* text-overflow: ellipsis; */
+        /* ellipsis meaning it give some dots in the end of a content and you can not see any text after the dotted sign*/
+
+        /* white space : nowrap meaning text stay on one line */
+        /* white-space: nowrap; */
+        /* use overflow auto maximum of the time  */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      I am a good boy and I love to write Lorem ipsum dolor sit amet,
+      consectetur adipisicing elit. Ea saepe ab, aperiam asperiores facilis quod
+      aut unde atque quaerat voluptatum autem consequatur sed est quia. Fugit
+      temporibus harum culpa, autem consequatur corrupti expedita distinctio.
+      Debitis cumque obcaecati, nam esse quisquam iste ipsum autem! Odit, quasi.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+      necessitatibus repudiandae expedita vero ullam quisquam explicabo magnam
+      vel qui repellat recusandae et facere tempore tempora natus optio,
+      nesciunt aut fugiat totam soluta fuga dolorem aliquam iure quae! Natus
+      voluptatibus fugiat accusamus itaque voluptate expedita, autem laboriosam!
+      Enim eius cumque veritatis vel magni, dolore tenetur, ab, vitae aliquam et
+      corrupti fugiat animi ad. Pariatur, ullam. Voluptates, facere aperiam
+      laudantium dolore quaerat totam reiciendis, rem, architecto tenetur
+      officiis dicta quis doloribus beatae?
+    </div>
+  </body>
+</html>
