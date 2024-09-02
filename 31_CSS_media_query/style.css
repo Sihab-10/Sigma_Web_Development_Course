@@ -1,0 +1,32 @@
+body {
+  background-color: rgb(223, 104, 104);
+  color: white;
+}
+/* syntax of media query is
+  @media not | only mediatype and (expression) {
+  css code;
+  }
+*/
+@media screen and (orientation: landscape) {
+  body {
+    border: 2px solid black;
+  }
+}
+@media only screen and (max-width: 455px) {
+  body {
+    background-color: blue;
+  }
+  .boxes {
+    flex-direction: column;
+  }
+}
+.boxes {
+  display: flex;
+}
+.box {
+  width: 344px;
+  height: 344px;
+  background-color: steelblue;
+  border: 2px solid black;
+  margin: 5px;
+}
