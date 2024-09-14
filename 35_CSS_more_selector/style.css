@@ -1,0 +1,51 @@
+/** this is first-child pseudo selector  */
+/* .box:first-child {
+  background-color: red;
+} */
+/** this is first-line pseudo selector */
+/* .box:first-line {
+  color: blue;
+} */
+/** this is universal selector  */
+.boxes * {
+  color: blue;
+  border: 2px solid black;
+}
+/** this is attribute selector */
+/* [data-color="primary"] {
+  background-color: aquamarine;
+} */
+/** this is grouping of selector  */
+/* p,
+a,
+.box {
+  padding: 20px;
+} */
+/** this is nth-child pseudo selector */
+/* .box:nth-child(odd) {
+  background-color: aqua;
+} */
+/** this is nth-last-child pseudo selector */
+/* .box:nth-last-child(1) {
+  background-color: aqua;
+} */
+/** this is before and after pseudo selector */
+.boxes::before {
+  content: "harry is good ";
+  color: red;
+}
+.boxes::after {
+  content: " sigma course is also good";
+  color: rgb(18, 119, 43);
+}
+::selection {
+  color: aqua;
+  background-color: black;
+}
+.box::first-letter {
+  color: peru;
+  font-size: 45px;
+}
+input::placeholder {
+  color: rgb(115, 115, 133);
+}
