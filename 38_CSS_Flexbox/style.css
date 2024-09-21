@@ -1,0 +1,47 @@
+.container {
+  border: 2px solid red;
+  display: flex;
+  height: 80vh;
+  /** horizontally center করতে চাইলে */
+  /* justify-content: center; */
+  /** item এর মাঝখানে ফাঁকা জায়গা রাখতে চাইলে */
+  /* justify-content: space-between; */
+  /** each and every item এর মাঝখানে ফাঁকা রাখতে চাইলে */
+  /* justify-content: space-around; */
+  /** item গুলোকে horizontally left এ রাখতে হলে */
+  /* justify-content: flex-start; */
+  /** item গুলোকে horizontally right এ রাখতে হলে */
+  /* justify-content: flex-end; */
+  /* justify-content: baseline; */
+  /** vertically center করতে চাইলে */
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /** flex-flow: <flex-direction> <flex-wrap>; */
+  flex-flow: row wrap;
+  /* gap: 30px; */
+  /* row-gap: 10px;
+  column-gap: 20px; */
+  /* gap: 10px 40px; */
+}
+.item1 {
+  flex-grow: 10;
+}
+.item {
+  width: 102px;
+  height: 102px;
+  background-color: blueviolet;
+  border: 2px solid black;
+  /* margin: 4px; */
+  color: white;
+}
+/* .order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+.order-3 {
+  order: 3;
+} */
