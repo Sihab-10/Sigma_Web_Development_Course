@@ -69,9 +69,11 @@ main {
   flex-wrap: wrap;
   gap: 20px 20px;
   justify-content: flex-start;
-  width: 900px;
+  width: 1000px;
   margin: 100px auto;
-  box-sizing: border-box;
+}
+.box {
+  padding: 10px;
 }
 .english-box {
   width: 200px;
@@ -85,6 +87,11 @@ main {
 
 .cmn-btn {
   margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #5cb85c;
+  font-weight: bolder;
+  color: white;
 }
 .heading {
   margin-top: 10px;
