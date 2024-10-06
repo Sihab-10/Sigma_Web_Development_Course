@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+.logo {
+  height: 100px;
+  width: 300px;
+  margin-right: 30vw;
+}
+nav ul li {
+  list-style: none;
+  padding: 25px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+nav ul li img {
+  height: 10px;
+  width: 10px;
+  padding-left: 5px;
+  /* margin-top: 11px; */
+}
+nav ul .lang {
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  text-align: center;
+  margin-top: 20px;
+  width: 1000px;
+}
+.first-line {
+  font-size: 2em;
+}
+.content span {
+  font-weight: bolder;
+}
+.content p {
+  font-size: 2em;
+  margin-top: 20px;
+}
+.first-button {
+  width: 300px;
+  margin-left: 85vh;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgb(102, 188, 241);
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+  font-size: 1em;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 20px;
+  justify-content: flex-start;
+  width: 900px;
+  margin: 100px auto;
+  box-sizing: border-box;
+}
+.english-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.english-box p {
+  word-wrap: break-word;
+}
+
+.cmn-btn {
+  margin: 20px;
+}
+.heading {
+  margin-top: 10px;
+}
+.Deutsch-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Deutsch-box p {
+  word-wrap: break-word;
+}
+.Italiano-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Italiano-box p {
+  word-wrap: break-word;
+}
+.Español-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Español-box p {
+  word-wrap: break-word;
+}
+.français-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.français-box p {
+  word-wrap: break-word;
+}
+.Português-brasileiro-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Português-brasileiro-box p {
+  word-wrap: break-word;
+}
+.Japanese-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Japanese-box p {
+  word-wrap: break-word;
+}
+.Korean-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Korean-box p {
+  word-wrap: break-word;
+}
+.Chinese-box {
+  width: 200px;
+  height: 200px;
+  background-color: gainsboro;
+  text-align: center;
+}
+.Chinese-box p {
+  word-wrap: break-word;
+}
