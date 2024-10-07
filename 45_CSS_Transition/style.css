@@ -1,0 +1,23 @@
+.container {
+  background-color: rgb(6, 37, 122);
+  width: 50vw;
+  height: 40vh;
+}
+.box {
+  background-color: rgb(255, 189, 127);
+  width: 5vw;
+  height: 4vh;
+  /* transition-property: transform; */
+  /* transition-property: all; */
+  /* transition-property: background-color, transform;
+  transition-duration: 3s; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-timing-function: cubic-bezier(0, 0, 0, 1.1);
+  transition-delay: 1s; */
+  /* transition: all 3s ease-in-out 2s; */
+  transition: all 3s cubic-bezier(0.08, 0.99, 0.58, 1) 2s;
+}
+.translate {
+  transform: translateX(10vw) translateY(10vh) scale(2);
+  background-color: rgb(255, 38, 0);
+}
