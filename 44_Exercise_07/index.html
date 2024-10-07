@@ -4,9 +4,202 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 07 : CSS Grid</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .logo img {
+        width: 164px;
+      }
+      nav {
+        display: flex;
+      }
+      .right ul {
+        display: flex;
+        gap: 34px;
+      }
+      .right ul li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!-- https://www.ultraedit.com/downloads/ultraedit-download-thank-you/?utm_source=CWH&utm_medium=LeadsAcquisition&utm_content=UEDownload&utm_campaign=UETrialDownload -->
     <!-- Design the body of this website -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img
+            src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE-Logo-1.webp"
+            alt="Ultraedit logo"
+          />
+        </div>
+        <div class="right">
+          <ul>
+            <li>
+              <span>Products</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>Pricing</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>Resources</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <span>About Us</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="14"
+                height="14"
+                color="#000000"
+                fill="none"
+              >
+                <path
+                  d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </li>
+            <li>
+              <img
+                class="end"
+                src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                alt="language"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="box1 box">
+        <h3>English</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box2 box">
+        <h3>German</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box3 box">
+        <h3>Italian</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box4 box">
+        <h3>Spanish</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box5 box">
+        <h3>French</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box6 box">
+        <h3>Brazilian Prtuguese</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box7 box">
+        <h3>Japanese</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box8 box">
+        <h3>Korean</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box9 box">
+        <h3>Chinese</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+      <div class="box10 box">
+        <h3>Traditional Chinese</h3>
+        <div class="btn">
+          <button class="bit-32">Download 32-bit</button>
+          <button class="bit-64">Download 64-bit</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
