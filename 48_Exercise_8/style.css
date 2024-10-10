@@ -1,0 +1,32 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 80px;
+  position: absolute;
+  bottom: 0;
+  animation: xaxis 3s linear 1s alternate 1, yaxis 3s ease-in-out 1s alternate 1;
+}
+.container {
+  width: 80vw;
+  height: 80vh;
+  background-color: blue;
+  position: relative;
+}
+@keyframes xaxis {
+  0% {
+    transform: translateX(0vw);
+  }
+  10% {
+    transform: translateX(10vw);
+  }
+}
+
+@keyframes yaxis {
+  0% {
+    transform: translateY(0vh);
+  }
+  10% {
+    transform: translateY(-10vh);
+  }
+}
