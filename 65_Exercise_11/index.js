@@ -8,4 +8,4 @@ console.log(array);
 const red = (a, b) => {
   return a * b;
 };
-console.log("The factorial of these numbers is: ", array.reduce(red));
+console.log("The factorial of the numbers is: ", array.reduce(red));
