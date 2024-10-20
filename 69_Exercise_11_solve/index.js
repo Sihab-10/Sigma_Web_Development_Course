@@ -13,5 +13,5 @@ function facfor(number) {
   }
   return fac;
 }
-console.log(factorial(a));
-console.log(facfor(a));
+console.log("using reduce method", factorial(a));
+console.log("using for loop", facfor(a));
