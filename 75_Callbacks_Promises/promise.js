@@ -1,5 +1,6 @@
 console.log("This is promises");
 /*
+promise of code execution
 promises is method where code executed like .then and .catch method
 using .then and .catch method after settlement either it resove or rejected
 */
